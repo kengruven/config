@@ -1,0 +1,2 @@
+# case-insensitive search by default; allow colors
+export LESS="-i -R"
