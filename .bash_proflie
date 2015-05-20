@@ -5,3 +5,5 @@ export LESS="-i -R"
 if [[ "$OSTYPE" == "darwin"* ]]; then
   export PATH=$PATH:/System/Library/Frameworks/JavaScriptCore.framework/Versions/Current/Resources/
 fi
+
+export PYTHONSTARTUP=$HOME/.pythonstartup
