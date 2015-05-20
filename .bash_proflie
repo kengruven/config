@@ -1,2 +1,7 @@
 # case-insensitive search by default; allow colors
 export LESS="-i -R"
+
+# jsc is installed on OS X, but not in $PATH
+if [[ "$OSTYPE" == "darwin"* ]]; then
+  export PATH=$PATH:/System/Library/Frameworks/JavaScriptCore.framework/Versions/Current/Resources/
+fi
