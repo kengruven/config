@@ -7,3 +7,6 @@ if [[ "$OSTYPE" == "darwin"* ]]; then
 fi
 
 export PYTHONSTARTUP=$HOME/.pythonstartup
+
+# some libraries get upset if you don't make this explicit
+export LC_ALL=en_US.UTF-8
