@@ -81,3 +81,8 @@
 (global-set-key [double-wheel-right] 'ignore)
 (global-set-key [triple-wheel-left] 'ignore)
 (global-set-key [triple-wheel-right] 'ignore)
+
+;; install js2-mode from MELPA
+(require 'js2-mode)  ;; not sure why i need this, but it fixes things
+(autoload 'js2-mode "js2" nil t)
+(add-to-list 'auto-mode-alist '("\\.js$" . js2-mode))
