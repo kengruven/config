@@ -66,3 +66,18 @@
 (global-git-gutter-mode t)
 
 (defalias 'yes-or-no-p 'y-or-n-p)
+
+;; inspired by <http://stackoverflow.com/a/25438277>:
+(mouse-wheel-mode -1)
+(global-set-key [wheel-up] 'ignore)
+(global-set-key [wheel-down] 'ignore)
+(global-set-key [double-wheel-up] 'ignore)
+(global-set-key [double-wheel-down] 'ignore)
+(global-set-key [triple-wheel-up] 'ignore)
+(global-set-key [triple-wheel-down] 'ignore)
+(global-set-key [wheel-left] 'ignore)
+(global-set-key [wheel-right] 'ignore)
+(global-set-key [double-wheel-left] 'ignore)
+(global-set-key [double-wheel-right] 'ignore)
+(global-set-key [triple-wheel-left] 'ignore)
+(global-set-key [triple-wheel-right] 'ignore)
