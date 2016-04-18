@@ -61,3 +61,5 @@
 
 ;; don't put backup files where i'm working
 (setq backup-directory-alist `(("." . "~/.saves")))
+
+(defalias 'yes-or-no-p 'y-or-n-p)
