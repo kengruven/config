@@ -86,3 +86,6 @@
 (require 'js2-mode)  ;; not sure why i need this, but it fixes things
 (autoload 'js2-mode "js2" nil t)
 (add-to-list 'auto-mode-alist '("\\.js$" . js2-mode))
+
+;; note: install zenburn-theme from MELPA
+(load-theme 'zenburn t)
