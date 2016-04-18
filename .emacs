@@ -15,7 +15,13 @@
 (tool-bar-mode 0)
 (column-number-mode t)
 
-(setq visible-bell t)
+;; from a comment on:
+;; <http://stuff-things.net/2015/10/05/emacs-visible-bell-work-around-on-os-x-el-capitan/>
+(setq visible-bell t
+      ring-bell-function (lambda ()
+                           (invert-face 'mode-line)
+                           (run-with-timer 0.1 nil 'invert-face 'mode-line)))
+
 
 (require 'uniquify)
 (setq uniquify-buffer-name-style 'post-forward-angle-brackets)
