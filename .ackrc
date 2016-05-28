@@ -3,5 +3,6 @@
 --type-set=log:ext:log
 --type-set=ini:ext:ini
 --type-set=svg:ext:svg
+--type-set=swift:ext:swift
 
 --ignore-file=is:TAGS
