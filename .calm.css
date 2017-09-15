@@ -1,0 +1,25 @@
+/* everybody... */
+/* * { transition: none !important; } */
+
+/* github */
+.pr-toolbar { display: none; }
+div.repository-content div.signup-prompt-bg { display: none }
+
+/* youtube */
+.yt-alert { display: none; }
+.yt-card.branded-page-box#watch-discussion { display: none; }  /* old */
+ytd-comments#comments { display: none !important; }  /* august 2017 */
+
+/* stackoverflow */
+body.question-page div#herobox-mini { display: none; }  /* "join!" */
+body.question-page div.hero-container { display: none; }  /* "learn, share, build" */
+body.question-page div#answers-header div.question-status { display: none; }  /* "try asking in another language!" */
+body.question-page div#hot-network-questions { display: none; }  /* unrelated questions */
+body.question-page div#newsletter-ad { display: none; }  /* newsletter ad */
+body.question-page #sidebar #hireme { display: none; }  /* "jobs near you" */
+body.home-page div.s-hero { display: none; }  /* "learn, share, build" */
+body.home-page #sidebar #hireme { display: none; }
+body.home-page #hot-network-questions { display: none; }  /* unrelated questions */
+
+/* wikipedia */
+body.mediawiki div.mwe-popups { display: none !important; }
