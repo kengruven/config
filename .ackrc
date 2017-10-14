@@ -6,3 +6,5 @@
 --type-set=swift:ext:swift
 
 --ignore-file=is:TAGS
+--ignore-dir=Carthage/
+--ignore-dir=_site/
