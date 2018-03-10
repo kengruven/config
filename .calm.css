@@ -9,6 +9,7 @@ div.repository-content div.signup-prompt-bg { display: none }
 .yt-alert { display: none; }
 .yt-card.branded-page-box#watch-discussion { display: none; }  /* old */
 ytd-comments#comments { display: none !important; }  /* august 2017 */
+ytd-mealbar-promo-renderer.ytd-popup-container { display: None !important; }  /* 2018 */
 
 /* stackoverflow */
 body.question-page div#herobox-mini { display: none; }  /* "join!" */
@@ -23,3 +24,6 @@ body.home-page #hot-network-questions { display: none; }  /* unrelated questions
 
 /* wikipedia */
 body.mediawiki div.mwe-popups { display: none !important; }
+
+/* namecheap */
+div.answerdash-not-selectable#answerdash { display: none; }
