@@ -3,7 +3,7 @@ export LESS="-i -R"
 
 # jsc is installed on OS X, but not in $PATH
 if [[ "$OSTYPE" == "darwin"* ]]; then
-  export PATH=$PATH:/System/Library/Frameworks/JavaScriptCore.framework/Versions/Current/Resources/
+  export PATH=$PATH:/System/Library/Frameworks/JavaScriptCore.framework/Versions/Current/Resources
 fi
 
 export PYTHONSTARTUP=$HOME/.pythonstartup
