@@ -26,4 +26,8 @@ body.home-page #hot-network-questions { display: none; }  /* unrelated questions
 body.mediawiki div.mwe-popups { display: none !important; }
 
 /* namecheap */
-div.answerdash-not-selectable#answerdash { display: none; }
+div.answerdash-not-selectable#answerdash { display: none !important; }
+
+/* google */
+body#gsr div.srg div[jsl] { display: none }
+body#gsr div.srg div.exp-outline { display: none }
