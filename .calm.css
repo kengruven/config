@@ -28,6 +28,9 @@ body.mediawiki div.mwe-popups { display: none !important; }
 /* namecheap */
 div.answerdash-not-selectable#answerdash { display: none !important; }
 
-/* google */
+/* google: animated boxes, after going back */
 body#gsr div.srg div[jsl] { display: none }
 body#gsr div.srg div.exp-outline { display: none }
+
+/* facebook: "suggested members" */
+div.groupsNewMembersLink#groupsNewMembersLink > div._275p { display: none }
