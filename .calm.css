@@ -34,3 +34,12 @@ body#gsr div.srg div.exp-outline { display: none }
 
 /* facebook: "suggested members" */
 div.groupsNewMembersLink#groupsNewMembersLink > div._275p { display: none }
+
+/* ?? */
+div[ue="live-agent"] { display: none }
+
+/* hacker news: absolute score */
+table#hnmain table td:last-child span.pagetop { font-size: 0pt !important; }
+table#hnmain table td:last-child span.pagetop a { font-size: 10pt; }
+table#hnmain table td:last-child span.pagetop a#me:after { content: ' '; }
+table#hnmain table td:last-child span.pagetop a#logout:before { content: ' | '; }
