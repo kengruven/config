@@ -1,5 +1,6 @@
-# case-insensitive search by default; allow colors
-export LESS="-i -R"
+export LESS="--ignore-case --RAW-CONTROL-CHARS"
+export LESSOPEN='|highlight %s'
+export HIGHLIGHT_OPTIONS='--out-format xterm256 --style edit-xcode'
 
 # use colors
 export CLICOLOR=1
@@ -16,6 +17,7 @@ fi
 
 # some libraries get upset if you don't make this explicit
 export LC_ALL=en_US.UTF-8
+export PATH="/usr/local/opt/postgresql@9.6/bin:$PATH"
 
 # disable control-D
 set -o ignoreeof
