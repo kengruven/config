@@ -6,6 +6,7 @@
 div.repository-content div.signup-prompt-bg { display: none }
 body.logged-in.env-production.page-dashboard div.application-main div#dashboard div.news.column { display: none; }  /* may 2018 */
 div.github-jobs-promotion { display: none; }
+div.Popover.js-notice { display: none; }
 
 /* youtube */
 .yt-alert { display: none; }
@@ -23,6 +24,7 @@ body.question-page #sidebar #hireme { display: none; }  /* "jobs near you" */
 body.home-page div.s-hero { display: none; }  /* "learn, share, build" */
 body.home-page #sidebar #hireme { display: none; }
 body.home-page #hot-network-questions { display: none; }  /* unrelated questions */
+div#js-gdpr-consent-banner { display: none; }
 
 /* wikipedia */
 body.mediawiki div.mwe-popups { display: none !important; }
@@ -45,3 +47,25 @@ table#hnmain table td:last-child span.pagetop { font-size: 0pt !important; }
 table#hnmain table td:last-child span.pagetop a { font-size: 10pt; }
 table#hnmain table td:last-child span.pagetop a#me:after { content: ' '; }
 table#hnmain table td:last-child span.pagetop a#logout:before { content: ' | '; }
+
+/* disqus */
+iframe[src^="https://disqus.com/embed/"] { display: none; }
+
+/* unionimpact */
+/* event details: */
+div#jobs-block table[role="presentation"] thead tr th:nth-child(1) { width: 15% !important; }
+div#jobs-block table[role="presentation"] thead tr th:nth-child(2) { width: 40% !important; }
+div#jobs-block table[role="presentation"] thead tr th:nth-child(3) { width: 10% !important; }
+div#jobs-block table[role="presentation"] thead tr th:nth-child(4) { width: 30% !important; }
+div#jobs-block table[role="presentation"] thead tr th:nth-child(5) { width: 5% !important; }
+/* job picks: */
+div.ext-dispatch-theater table.table[data-source^="https://iatse15.unionimpact.com/dp-iatse15/jobs/picks"] thead tr th:nth-child(1) { width: 5% !important; }
+div.ext-dispatch-theater table.table[data-source^="https://iatse15.unionimpact.com/dp-iatse15/jobs/picks"] thead tr th:nth-child(2) { width: 5% !important; }
+div.ext-dispatch-theater table.table[data-source^="https://iatse15.unionimpact.com/dp-iatse15/jobs/picks"] thead tr th:nth-child(3) { width: 10% !important; }
+div.ext-dispatch-theater table.table[data-source^="https://iatse15.unionimpact.com/dp-iatse15/jobs/picks"] thead tr th:nth-child(4) { width: 20% !important; }
+div.ext-dispatch-theater table.table[data-source^="https://iatse15.unionimpact.com/dp-iatse15/jobs/picks"] thead tr th:nth-child(5) { width: 20% !important; }
+div.ext-dispatch-theater table.table[data-source^="https://iatse15.unionimpact.com/dp-iatse15/jobs/picks"] thead tr th:nth-child(6) { width: 30% !important; }
+div.ext-dispatch-theater table.table[data-source^="https://iatse15.unionimpact.com/dp-iatse15/jobs/picks"] thead tr th:nth-child(7) { width: 5% !important; }
+div.ext-dispatch-theater table.table[data-source^="https://iatse15.unionimpact.com/dp-iatse15/jobs/picks"] thead tr th:nth-child(8) { width: 5% !important; }
+div.ext-dispatch-theater div#information nav.navbar-actions ul.nav.navbar-cancel li { display: none !important; } /* event summary: "back" */
+div.ext-dispatch-theater section.panel div.panel-body ul.nav.nav-tabs { display: none !important; }  /* "summary" tab */
