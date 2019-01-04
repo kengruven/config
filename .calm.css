@@ -68,4 +68,4 @@ div.ext-dispatch-theater table.table[data-source^="https://iatse15.unionimpact.c
 div.ext-dispatch-theater table.table[data-source^="https://iatse15.unionimpact.com/dp-iatse15/jobs/picks"] thead tr th:nth-child(7) { width: 5% !important; }
 div.ext-dispatch-theater table.table[data-source^="https://iatse15.unionimpact.com/dp-iatse15/jobs/picks"] thead tr th:nth-child(8) { width: 5% !important; }
 div.ext-dispatch-theater div#information nav.navbar-actions ul.nav.navbar-cancel li { display: none !important; } /* event summary: "back" */
-div.ext-dispatch-theater section.panel div.panel-body ul.nav.nav-tabs { display: none !important; }  /* "summary" tab */
+div.ext-dispatch-theater section.panel div.panel-body ul.nav.nav-tabs a#dpth-member-information { display: none !important; }  /* "summary" tab */
