@@ -7,6 +7,8 @@ div.repository-content div.signup-prompt-bg { display: none }
 body.logged-in.env-production.page-dashboard div.application-main div#dashboard div.news.column { display: none; }  /* may 2018 */
 div.github-jobs-promotion { display: none; }
 header.f5 div.HeaderMenu div.Popover.js-notice.js-jump-to-popover div.Popover-message { display: none; }
+div.Popover.js-notice { display: none; }
+body.env-production div.repository-content form.new_issue div.js-related-issues-suggestions-results-wrapper { display: none; }  /* "The following issues might be related." */
 
 /* youtube */
 .yt-alert { display: none; }
@@ -24,6 +26,7 @@ body.question-page #sidebar #hireme { display: none; }  /* "jobs near you" */
 body.home-page div.s-hero { display: none; }  /* "learn, share, build" */
 body.home-page #sidebar #hireme { display: none; }
 body.home-page #hot-network-questions { display: none; }  /* unrelated questions */
+div#js-gdpr-consent-banner { display: none; }
 
 /* wikipedia */
 body.mediawiki div.mwe-popups { display: none !important; }
@@ -60,3 +63,35 @@ section.infobar.commentsignupbar { display: none; }
 div.infobar-toaster-container div.reddit-infobar { display: none !important; }
 img.img_ad { display: none; }
 div.read-next-container { display: none; }
+
+/* disqus */
+iframe[src^="https://disqus.com/embed/"] { display: none; }
+
+/* unionimpact */
+/* event details: */
+div#jobs-block table[role="presentation"] thead tr th:nth-child(1) { width: 15% !important; }
+div#jobs-block table[role="presentation"] thead tr th:nth-child(2) { width: 40% !important; }
+div#jobs-block table[role="presentation"] thead tr th:nth-child(3) { width: 10% !important; }
+div#jobs-block table[role="presentation"] thead tr th:nth-child(4) { width: 30% !important; }
+div#jobs-block table[role="presentation"] thead tr th:nth-child(5) { width: 5% !important; }
+/* job picks: */
+div.ext-dispatch-theater table.table[data-source^="https://iatse15.unionimpact.com/dp-iatse15/jobs/picks"] thead tr th:nth-child(1) { width: 5% !important; }
+div.ext-dispatch-theater table.table[data-source^="https://iatse15.unionimpact.com/dp-iatse15/jobs/picks"] thead tr th:nth-child(2) { width: 5% !important; }
+div.ext-dispatch-theater table.table[data-source^="https://iatse15.unionimpact.com/dp-iatse15/jobs/picks"] thead tr th:nth-child(3) { width: 10% !important; }
+div.ext-dispatch-theater table.table[data-source^="https://iatse15.unionimpact.com/dp-iatse15/jobs/picks"] thead tr th:nth-child(4) { width: 20% !important; }
+div.ext-dispatch-theater table.table[data-source^="https://iatse15.unionimpact.com/dp-iatse15/jobs/picks"] thead tr th:nth-child(5) { width: 20% !important; }
+div.ext-dispatch-theater table.table[data-source^="https://iatse15.unionimpact.com/dp-iatse15/jobs/picks"] thead tr th:nth-child(6) { width: 30% !important; }
+div.ext-dispatch-theater table.table[data-source^="https://iatse15.unionimpact.com/dp-iatse15/jobs/picks"] thead tr th:nth-child(7) { width: 5% !important; }
+div.ext-dispatch-theater table.table[data-source^="https://iatse15.unionimpact.com/dp-iatse15/jobs/picks"] thead tr th:nth-child(8) { width: 5% !important; }
+div.ext-dispatch-theater div#information nav.navbar-actions ul.nav.navbar-cancel li { display: none !important; } /* event summary: "back" */
+div.ext-dispatch-theater section.panel div.panel-body ul.nav.nav-tabs a#dpth-member-information { display: none !important; }  /* "summary" tab */
+
+/* discourse, like forums.swift.org */
+html.discourse-no-touch section#main article div.topic-body { animation-name: none !important; }
+html.discourse-no-touch section#main div.container.posts div.timeline-container { display: none !important; }
+html.discourse-no-touch section#main div.signup-cta.alert.alert-info { display: none !important; }
+/* WIP: the super-skinny view is terrible for trying to read source code,
+   but the obvious fixes are bad in other ways ... i'm torn. */
+/* html.discourse-no-touch section#main div#main-outlet.wrap { max-width: none !important; } */
+/* html.discourse-no-touch section#main div.topic-body { width: inherit !important; } */
+>>>>>>> 22ff2896f550a084ff4522e773e83b61f3dfa432
