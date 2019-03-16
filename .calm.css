@@ -6,6 +6,7 @@
 div.repository-content div.signup-prompt-bg { display: none }
 body.logged-in.env-production.page-dashboard div.application-main div#dashboard div.news.column { display: none; }  /* may 2018 */
 div.github-jobs-promotion { display: none; }
+header.f5 div.HeaderMenu div.Popover.js-notice.js-jump-to-popover div.Popover-message { display: none; }
 div.Popover.js-notice { display: none; }
 body.env-production div.repository-content form.new_issue div.js-related-issues-suggestions-results-wrapper { display: none; }  /* "The following issues might be related." */
 div.Popover.js-hovercard-content { display: none !important; }  /* user/bug popovers */
@@ -33,6 +34,13 @@ body.mediawiki div.mwe-popups { display: none !important; }
 
 /* namecheap */
 div.answerdash-not-selectable#answerdash { display: none !important; }
+layout-livechat { display: none; }
+footer .gb-support { display: none; }
+footer .gb-certifications { display: none; }
+footer .certifications { display: none; }
+footer .promo-chat { display: none; }
+footer .legal[role="contentinfo"] { display: none; }
+
 
 /* google: animated boxes, after going back */
 body#gsr div.srg div[jsl] { display: none }
@@ -49,6 +57,13 @@ table#hnmain table td:last-child span.pagetop { font-size: 0pt !important; }
 table#hnmain table td:last-child span.pagetop a { font-size: 10pt; }
 table#hnmain table td:last-child span.pagetop a#me:after { content: ' '; }
 table#hnmain table td:last-child span.pagetop a#logout:before { content: ' | '; }
+
+/* reddit */
+section.infobar.listingsignupbar { display: none !important; }
+section.infobar.commentsignupbar { display: none; }
+div.infobar-toaster-container div.reddit-infobar { display: none !important; }
+img.img_ad { display: none; }
+div.read-next-container { display: none; }
 
 /* disqus */
 iframe[src^="https://disqus.com/embed/"] { display: none; }
