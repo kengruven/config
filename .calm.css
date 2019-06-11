@@ -104,3 +104,6 @@ html.discourse-no-touch section#main div.signup-cta.alert.alert-info { display: 
 
 /* twitter */
 body.user-style-KenHatesSoftwar li#user-dropdown ul[role="menu"] li.nightmode-toggle { display: none !important; }  /* "night mode" */
+
+/* aws */
+#awsc-nav-phd-dot { display: none }  /* blue dot that never goes away */
