@@ -10,6 +10,7 @@ header.f5 div.HeaderMenu div.Popover.js-notice.js-jump-to-popover div.Popover-me
 div.Popover.js-notice { display: none; }
 body.env-production div.repository-content form.new_issue div.js-related-issues-suggestions-results-wrapper { display: none; }  /* "The following issues might be related." */
 div.Popover.js-hovercard-content { display: none !important; }  /* user/bug popovers */
+div.repository-content table.files tr.up-tree { display: none }  /* ".." */
 
 /* youtube */
 .yt-alert { display: none; }
@@ -43,8 +44,13 @@ footer .legal[role="contentinfo"] { display: none; }
 
 
 /* google: animated boxes, after going back */
+/*
+OLD?:
 body#gsr div.srg div[jsl] { display: none }
 body#gsr div.srg div.exp-outline { display: none }
+*/
+body#gsr div.kno-kp.mnr-c.g-blk[data-hveid=CBAQAA] { display: none }
+/* substr: foo[class*="test"] */
 
 /* facebook: "suggested members" */
 div.groupsNewMembersLink#groupsNewMembersLink > div._275p { display: none }
