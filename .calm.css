@@ -107,3 +107,4 @@ body.user-style-KenHatesSoftwar li#user-dropdown ul[role="menu"] li.nightmode-to
 
 /* aws */
 #awsc-nav-phd-dot { display: none }  /* blue dot that never goes away */
+body#top div#cookie-notice { display: none !important }
