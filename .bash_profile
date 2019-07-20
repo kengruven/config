@@ -1,5 +1,7 @@
 # FOR LOGIN SHELLS
 
+export PS1="\u@\h:\w \\$ "
+
 export LESS="--ignore-case --RAW-CONTROL-CHARS"
 export LESSOPEN='|highlight %s'
 export HIGHLIGHT_OPTIONS='--out-format xterm256 --style edit-xcode'
