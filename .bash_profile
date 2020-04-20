@@ -21,3 +21,6 @@ export PATH="/usr/local/opt/postgresql@9.6/bin:$PATH"
 
 # disable control-D
 set -o ignoreeof
+
+# use GNU utils (like grep) first, if present (GNU grep is a lot faster!)
+PATH="/usr/local/opt/grep/libexec/gnubin:$PATH"
