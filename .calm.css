@@ -3,7 +3,8 @@
 
 /* github */
 .pr-toolbar { display: none; }
-div.repository-content div.signup-prompt-bg { display: none }
+div.repository-content div.signup-prompt-bg { display: none }  /* obsolete? */
+div.repository-content signup-prompt-controller { display: none }  /* apr 2020 */
 body.logged-in.env-production.page-dashboard div.application-main div#dashboard div.news.column { display: none; }  /* may 2018 */
 div.github-jobs-promotion { display: none; }
 header.f5 div.HeaderMenu div.Popover.js-notice.js-jump-to-popover div.Popover-message { display: none; }
