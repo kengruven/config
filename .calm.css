@@ -4,7 +4,7 @@
 /* github */
 .pr-toolbar { display: none; }
 div.repository-content div.signup-prompt-bg { display: none }  /* obsolete? */
-div.repository-content signup-prompt-controller { display: none }  /* apr 2020 */
+html > body.logged-out signup-prompt-controller { display: none }  /* apr 2020 */
 body.logged-in.env-production.page-dashboard div.application-main div#dashboard div.news.column { display: none; }  /* may 2018 */
 div.github-jobs-promotion { display: none; }
 header.f5 div.HeaderMenu div.Popover.js-notice.js-jump-to-popover div.Popover-message { display: none; }
@@ -109,3 +109,6 @@ body.user-style-KenHatesSoftwar li#user-dropdown ul[role="menu"] li.nightmode-to
 /* aws */
 #awsc-nav-phd-dot { display: none }  /* blue dot that never goes away */
 body#top div#cookie-notice { display: none !important }
+
+/* app store connect */
+div#appstore div.app-store-container div.content-grid-area div#whatsNew { height: 400px !important; }
