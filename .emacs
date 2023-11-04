@@ -62,8 +62,8 @@
 
 ;; derekslager's clever scrolling idea:
 ;; FUTURE: should i use scroll-*-command rather than scroll-* now?
-(global-set-key [up] (lambda (n) (interactive "P") (scroll-down (or n 1))))
-(global-set-key [down] (lambda (n) (interactive "P") (scroll-up (or n 1))))
+(global-set-key [up] (lambda (n) (interactive "P") (scroll-down (prefix-numeric-value n))))
+(global-set-key [down] (lambda (n) (interactive "P") (scroll-up (prefix-numeric-value n))))
 (global-set-key [left] (lambda (n) (interactive "P") (scroll-right (* tab-width (prefix-numeric-value n)) t)))
 (global-set-key [right] (lambda (n) (interactive "P") (scroll-left (* tab-width (prefix-numeric-value n)) t)))
 
