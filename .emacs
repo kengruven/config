@@ -2,15 +2,32 @@
 ;; Ken's .emacs!
 ;;
 
+;; TODO: update with use-package -- https://github.com/jwiegley/use-package
+
 ;; Requires (>= emacs-major-version 24) for MELPA, at least.  I
 ;; should probably add a check for that.
+
+;; from <https://stackoverflow.com/a/5058752>
+(setq custom-file "~/.emacs.d/custom.el")
+(load custom-file)
+
+;; PACKAGES TO INSTALL:
+;; - js2-mode
+;; - git-gutter
+;; - mic-paren
+;; - markdown-mode
+;; - racket-mode
+;; - e2ansi
 
 ;; To use this: paren-activate (below) is mic-paren, which is a
 ;; package installed through MELPA.  Run the 3 lines below, then run
 ;; (list-packages), and install mic-paren (i, then x).
 (require 'package)
-(package-initialize)
-(add-to-list 'package-archives '("melpa" . "http://melpa.milkbox.net/packages/") t)
+;; (package-initialize)  ;; no longer necessary, as of 27.1
+;; default package-archives: ("gnu" . "https://elpa.gnu.org/packages/")
+(add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/") t)
+(add-to-list 'package-archives '("melpa-stable" . "https://stable.melpa.org/packages/") t)
+;; (setq package-archives ())
 
 (tool-bar-mode 0)
 (column-number-mode t)
@@ -44,10 +61,11 @@
 (setq-default indent-tabs-mode nil)
 
 ;; derekslager's clever scrolling idea:
-(global-set-key [up] (lambda () (interactive) (scroll-down 1)))
-(global-set-key [down] (lambda () (interactive) (scroll-up 1)))
-(global-set-key [left] (lambda () (interactive) (scroll-right tab-width t)))
-(global-set-key [right] (lambda () (interactive) (scroll-left tab-width t)))
+;; FUTURE: should i use scroll-*-command rather than scroll-* now?
+(global-set-key [up] (lambda (n) (interactive "P") (scroll-down (or n 1))))
+(global-set-key [down] (lambda (n) (interactive "P") (scroll-up (or n 1))))
+(global-set-key [left] (lambda (n) (interactive "P") (scroll-right (* tab-width (prefix-numeric-value n)) t)))
+(global-set-key [right] (lambda (n) (interactive "P") (scroll-left (* tab-width (prefix-numeric-value n)) t)))
 
 ;; omit boring files
 (eval-after-load "dired"
@@ -62,25 +80,28 @@
 ;; don't put backup files where i'm working
 (setq backup-directory-alist `(("." . "~/.saves")))
 
-(require 'git-gutter)
+;;(require 'git-gutter)
 (global-git-gutter-mode t)
+(custom-set-variables
+ '(git-gutter:update-interval 2))
 
 (defalias 'yes-or-no-p 'y-or-n-p)
 
 ;; inspired by <http://stackoverflow.com/a/25438277>:
-(mouse-wheel-mode -1)
-(global-set-key [wheel-up] 'ignore)
-(global-set-key [wheel-down] 'ignore)
-(global-set-key [double-wheel-up] 'ignore)
-(global-set-key [double-wheel-down] 'ignore)
-(global-set-key [triple-wheel-up] 'ignore)
-(global-set-key [triple-wheel-down] 'ignore)
-(global-set-key [wheel-left] 'ignore)
-(global-set-key [wheel-right] 'ignore)
-(global-set-key [double-wheel-left] 'ignore)
-(global-set-key [double-wheel-right] 'ignore)
-(global-set-key [triple-wheel-left] 'ignore)
-(global-set-key [triple-wheel-right] 'ignore)
+(when (eq system-type 'darwin)
+  (mouse-wheel-mode -1)
+  (global-set-key [wheel-up] 'ignore)
+  (global-set-key [wheel-down] 'ignore)
+  (global-set-key [double-wheel-up] 'ignore)
+  (global-set-key [double-wheel-down] 'ignore)
+  (global-set-key [triple-wheel-up] 'ignore)
+  (global-set-key [triple-wheel-down] 'ignore)
+  (global-set-key [wheel-left] 'ignore)
+  (global-set-key [wheel-right] 'ignore)
+  (global-set-key [double-wheel-left] 'ignore)
+  (global-set-key [double-wheel-right] 'ignore)
+  (global-set-key [triple-wheel-left] 'ignore)
+  (global-set-key [triple-wheel-right] 'ignore))
 
 ;; install js2-mode from MELPA
 (require 'js2-mode)  ;; not sure why i need this, but it fixes things
@@ -88,4 +109,12 @@
 (add-to-list 'auto-mode-alist '("\\.js$" . js2-mode))
 
 ;; note: install zenburn-theme from MELPA
-(load-theme 'zenburn t)
+;;(load-theme 'zenburn t)
+
+(ido-mode)
+
+;; use C-j to activate
+(require 'emmet-mode)
+(add-hook 'html-mode-hook 'emmet-mode)
+(add-hook 'css-mode-hook 'emmet-mode)
+;; FUTURE: maybe also 'sgml-mode-hook?
